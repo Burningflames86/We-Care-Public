@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Symptom Tracker</title>
+</head>
+<body>
+    <div class=" symplist bg-violet-600 w-96 px-10 rounded-3xl grid  text-white min-h-96 fixed left-0 right-0 top-[25%] mx-auto my-auto overflow-y-scroll" id="symplist">
+        <h1 class="text-3xl text-white font-bold text-center -sm:text-3xl">Your Symptom List Has Been Updated:</h1>
+        <ul class="particulardiv my-4 list-disc" id="particulardiv"></ul>
+        <button type="close" class="mx-10 rounded-full close bg-white-800 p-4 py-1 justify-self-center text-violet border-white border-2 my-2">Close</button>
+    </div>
+
+    <h1 class="text-7xl font-bold text-center -sm:text-3xl">Some major diseases</h1>
+    <div class="deases grid  px-4 my-5 gap-4">
+        <div class="cancer child border-2 border-orange-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-orange-400 py-3 bg-orange-400 text-white font-semibold">Brain Cancer</h3>
+            <input type="checkbox" name="Headache" class="ml-4 checkbox">
+            <label for="Headache"> Headache</label><br>
+            <input type="checkbox" name="Nausea" class="ml-4 checkbox" >
+            <label for="Nausea"> Nausea</label><br>
+            <input type="checkbox" name="Vision problems" class="ml-4 checkbox">
+            <label for="Vision problems"> Vision problems</label><br>
+            <input type="checkbox" name="Balance" class="ml-4 checkbox">
+            <label for="Balance"> Difficulty with balance</label><br>
+            <input type="checkbox" name="Speech difficulties" class="ml-4 checkbox">
+            <label for="Speech difficulties"> Speech difficulties</label><br>
+            <input type="checkbox" name="Inability to follow simple commands" class="ml-4 checkbox">
+            <label for="Inability to follow simple commands"> Inability to follow simple commands</label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+        <div class="diabetes child border-2 border-blue-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-blue-400 py-3 bg-blue-400 text-white font-semibold">Diabetes</h3>
+            <input type="checkbox" name="Urinating oftne" class="ml-4 checkbox">
+            <label for="Urinating oftne"> Urinating often.</label><br>
+            <input type="checkbox" name="Losing weight without trying." class="ml-4 checkbox" >
+            <label for="Losing weight without trying."> Losing weight without trying.</label><br>
+            <input type="checkbox" name="Feeling tired and weak." class="ml-4 checkbox">
+            <label for="Feeling tired and weak."> Feeling tired and weak.</label><br>
+            <input type="checkbox" name="Having blurry vision." class="ml-4 checkbox">
+            <label for="Having blurry vision."> Having blurry vision.</label><br>
+            <input type="checkbox" name="Having slow-healing sores." class="ml-4 checkbox">
+            <label for="Having slow-healing sores."> Having slow-healing sores.</label><br>
+            <input type="checkbox" name="Feeling more thirsty than usual." class="ml-4 checkbox">
+            <label for="Feeling more thirsty than usual."> Feeling more thirsty than usual.</label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+        <div class="stroke child border-2 border-violet-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-violet-400 py-3 bg-violet-400 text-white font-semibold">Stroke</h3>
+            <input type="checkbox" name="Sudden numbness" class="ml-4 checkbox">
+            <label for="Sudden numbness"> Sudden numbness</label><br>
+            <input type="checkbox" name="Sudden confusion" class="ml-4 checkbox" >
+            <label for="Sudden confusion"> Sudden confusion</label><br>
+            <input type="checkbox" name="Sudden trouble seeing" class="ml-4 checkbox">
+            <label for="Sudden trouble seeing"> Sudden trouble seeing</label><br>
+            <input type="checkbox" name="Sudden trouble walking" class="ml-4 checkbox">
+            <label for="Sudden trouble walking">Sudden trouble walking</label><br>
+            <input type="checkbox" name="Sudden severe Headache" class="ml-4 checkbox">
+            <label for="Sudden severe Headache"> Sudden severe headache </label><br>
+            <input type="checkbox" name="Diziness" class="ml-4 checkbox">
+            <label for="Diziness"> Diziness</label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+        <div class="resp child border-2 border-yellow-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-yellow-400 py-3 bg-yellow-400 text-white font-semibold">Respiratory Infections</h3>
+            <input type="checkbox" name="Sneezing" class="ml-4 checkbox">
+            <label for="Sneezing"> Sneezing</label><br>
+            <input type="checkbox" name="Headache" class="ml-4 checkbox" >
+            <label for="Headache"> Headache</label><br>
+            <input type="checkbox" name="Breathlessness" class="ml-4 checkbox">
+            <label for="Breathlessness"> Breathlessness</label><br>
+            <input type="checkbox" name="Fatigue" class="ml-4 checkbox">
+            <label for="Fatigue"> Fatigue</label><br>
+            <input type="checkbox" name="Wheezing" class="ml-4 checkbox">
+            <label for="Wheezing"> Wheezing</label><br>
+            <input type="checkbox" name="Pain During Sallowing" class="ml-4 checkbox">
+            <label for="Pain During Sallowing"> Pain During Sallowing</label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+        <div class="alzheimer child border-2 border-yellow-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-yellow-400 py-3 bg-yellow-400 text-white font-semibold">Alzheimer</h3>
+            <input type="checkbox" name="Forgetting about recent things" class="ml-4 checkbox">
+            <label for="Forgetting about recent things"> Forgetting about recent things</label><br>
+            <input type="checkbox" name="Misplacing items" class="ml-4 checkbox" >
+            <label for="Misplacing items"> Misplacing items</label><br>
+            <input type="checkbox" name="Asking questions repetitively" class="ml-4 checkbox">
+            <label for="Asking questions repetitively"> Asking questions repetitively</label><br>
+            <input type="checkbox" name="Forgetting the names of places" class="ml-4 checkbox">
+            <label for="Forgetting the names of places"> Forgetting the names of places</label><br>
+            <input type="checkbox" name="Disturbed sleep" class="ml-4 checkbox">
+            <label for="Disturbed sleep"> Disturbed sleep</label><br>
+            <input type="checkbox" name="Difficulty eating " class="ml-4 checkbox">
+            <label for="Difficulty eating "> Difficulty eating </label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+        <div class="tuberculosis child border-2 border-violet-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-violet-400 py-3 bg-violet-400 text-white font-semibold">Tuberculosis</h3>
+            <input type="checkbox" name="Coughing up blood or mucus." class="ml-4 checkbox">
+            <label for="Coughing up blood or mucus."> Coughing up blood or mucus.</label><br>
+            <input type="checkbox" name="Chest pain" class="ml-4 checkbox" >
+            <label for="Chest pain"> Chest pain</label><br>
+            <input type="checkbox" name="Fatigue" class="ml-4 checkbox">
+            <label for="Fatigue"> Fatigue</label><br>
+            <input type="checkbox" name="Night sweats" class="ml-4 checkbox">
+            <label for="Night sweats">Night sweats</label><br>
+            <input type="checkbox" name="Chills " class="ml-4 checkbox">
+            <label for="Chills "> Chills </label><br>
+            <input type="checkbox" name="Unintentional weight loss." class="ml-4 checkbox">
+            <label for="Unintentional weight loss."> Unintentional weight loss.</label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+        <div class="pneumonia child border-2 border-blue-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-blue-400 py-3 bg-blue-400 text-white font-semibold">Pneumonia</h3>
+            <input type="checkbox" name="Fatigue" class="ml-4 checkbox">
+            <label for="Fatigue"> Fatigue</label><br>
+            <input type="checkbox" name="Fever" class="ml-4 checkbox" >
+            <label for="Fever"> Fever</label><br>
+            <input type="checkbox" name="Confusion " class="ml-4 checkbox">
+            <label for="Confusion "> Confusion </label><br>
+            <input type="checkbox" name="Shaking chills" class="ml-4 checkbox">
+            <label for="Shaking chills"> Shaking chills</label><br>
+            <input type="checkbox" name="vomiting " class="ml-4 checkbox">
+            <label for="vomiting "> vomiting </label><br>
+            <input type="checkbox" name="Sweating " class="ml-4 checkbox">
+            <label for="Sweating "> Sweating </label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+
+        <div class="dengue child border-2 border-orange-400 rounded-lg">
+            <h3 class="text-xl mb-3 text-center border-b-2 border-orange-400 py-3 bg-orange-400 text-white font-semibold">Dengue</h3>
+            <input type="checkbox" name="Nausea" class="ml-4 checkbox">
+            <label for="Nausea"> Nausea</label><br>
+            <input type="checkbox" name="Vomiting" class="ml-4 checkbox" >
+            <label for="Vomiting"> Vomiting</label><br>
+            <input type="checkbox" name="Rash" class="ml-4 checkbox">
+            <label for="Rash"> Rash</label><br>
+            <input type="checkbox" name="Belly pain" class="ml-4 checkbox">
+            <label for="Belly pain">Belly pain</label><br>
+            <input type="checkbox" name="Restlesness" class="ml-4 checkbox">
+            <label for="Restlesness"> Restlesness</label><br>
+            <input type="checkbox" name="Tenderness" class="ml-4 checkbox">
+            <label for="Tenderness"> Tenderness</label><br>
+            
+            <button type="submit" class="ml-4 rounded-full submit bg-orange-800 p-4 py-1 text-white my-2">Submit</button>
+        </div>
+    </div>
+
+
+    <script src="./symp.js"></script>
+</body>
+</html>

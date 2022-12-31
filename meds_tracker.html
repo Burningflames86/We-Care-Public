@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body class="grid justify-center align-center gap-10 ">
+    <h1 class="text-7xl text-center">Your Meds Tracker</h1>
+    <div class="newinput grid justify-center rounded-3xl border-black border-2 py-3 w-80 justify-self-center ">
+        <div class="medname">
+            <h5>Enter medicine name :</h5>
+            <input type="text" class=" rounded-3xl border-2 border-black pl-4">
+        </div>
+        <div class="dosage mt-4">
+            <h5>Enter number of dosage prescribed <br> by doctor in a day:</h5>
+            <input type="text" class=" rounded-3xl border-2 border-black pl-4 doses">
+        </div>
+        <div class="timings"></div>
+        </div>
+
+        <div class="meds  grid grid-cols-16 gap-4 px-4">
+            
+        </div>
+
+        <div class="date absolute top-2 right-4 text-2xl text-right -sm:invisible"></div>
+        <div class="stop hidden absolute top-10 left-10">
+            <button class=" bg-red-800 border-2 border-red-800  text-white mt-3 px-3 py-2 hover:bg-white hover:text-black hover:border-2 hover:border-black">Stop</button>
+        </div>
+
+    <script src="./meds.js"></script>
+</body>
+</html>
